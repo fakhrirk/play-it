@@ -90,11 +90,3 @@ nav {
 .image-hero img {
   width: 300px;
 }
-<<<<<<< HEAD
-.image-hero img:hover{
-  transform: scale(10px);
-=======
-.image-hero img:hover {
-  opacity: 0.7;
->>>>>>> b37e56e4e48a764a995e0be6805338d11029725f
-}
