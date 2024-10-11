@@ -11,8 +11,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
   width: auto;
-  padding: 20px 0;
+  padding: 20px 0 7px 0;
 }
 
 .nav-logo {
@@ -25,7 +26,7 @@ nav {
 }
 
 .nav-item {
-  margin: 0 13% 0 20%;
+  margin: 0 15% 0 25%;
   width: 25%;
 }
 
@@ -43,7 +44,7 @@ nav {
   transition: 0.7s;
 }
 
-.nav-item a:hover {
+.nav-item .noActive:hover {
   transform: translateY(-6px);
   font-weight: 500;
   color: #000000;
@@ -65,28 +66,87 @@ nav {
   border-radius: 2px;
 }
 
-.nav-button {
-  width: 10%;
-}
-
 .btn-nav-AI {
-  background-color: #dfd3c3;
+  background-color: transparent;
   padding: 10px 40px;
   font-weight: 600;
   font-family: "poppins";
   font-size: 13px;
   cursor: pointer;
-  border: 0;
+  border: 2px solid #dfd3c3;
+  color: #dfd3c3;
   text-align: center;
   border-radius: 50px;
   transition: 0.7s;
 }
 
 .btn-nav-AI:hover {
-  border: 1px solid #000000;
-  transform: translateY(-6px);
+  background-color: #dfd3c3;
+  color: black;
+}
+
+/* HeroVVVVVVVVVVVVVVVV */
+
+.container-hero {
+  width: 100vw;
+  height: 87vh;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-hero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 50px;
 }
 
 .image-hero img {
-  width: 300px;
+  width: auto;
+}
+
+.image-hero {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.header-text-hero h1 {
+  width: 80%;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.kebebasan {
+  color: #596e79;
+}
+
+.deskripsi-text-hero p {
+  width: 90%;
+  font-family: "poppins";
+  color: #596e79;
+  margin: 30px 0 30px 0;
+}
+
+.btn-hero-pahlawan {
+  background-color: transparent;
+  padding: 10px 40px;
+  font-weight: 600;
+  font-family: "poppins";
+  font-size: 13px;
+  cursor: pointer;
+  border: 2px solid #dfd3c3;
+  text-align: center;
+  color: #dfd3c3;
+  border-radius: 50px;
+  transition: 0.7s;
+}
+
+.btn-hero-pahlawan:hover {
+  background-color: #dfd3c3;
+  color: black;
 }
