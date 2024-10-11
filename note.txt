@@ -1,0 +1,2 @@
+main color = #596E79
+background button = #DFD3C3
