@@ -90,3 +90,6 @@ nav {
 .image-hero img {
   width: 300px;
 }
+.image-hero img:hover{
+  transform: scale(10px);
+}
