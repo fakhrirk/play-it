@@ -208,7 +208,7 @@ nav {
 .container-biografi{
   /* border: 1px solid rgb(255, 0, 0); */
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: flex;
   margin-bottom: 6%;
   flex-direction: column;
@@ -219,12 +219,12 @@ nav {
 .biografi1{
   /* border: 1px solid black; */
   width: 100%;
-  height: 70vh;
+  height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: baseline;
   flex-direction: column;
   align-items: center;
-  padding: 0 90px;
+  /* padding: 0 90px; */
 }
 .biografi1 h1{
   font-size: 90px;
@@ -241,218 +241,80 @@ nav {
   margin-top: 20px;
 }
 
-.biografi2{
-  /* border: 1px solid black; */
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  align-items: start;
-  /* padding: 0 90px; */
+/* SLIDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+
+.card-wrapper{
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-/* pahlawan111111111111111111111111111111 */
+.cardlist .carditem{
+  width: 400px;
+  list-style: none;
+}
 
-.bio-pahlawan1{
-  align-items: center;
-  justify-content: center;
+.cardlist .carditem .cardlink{
+  width: 400px;
+  user-select: none;
+  display: block;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
-.img-pahlawan1{
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan1 img{
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.text-pahlawan1{
+.cardlink-text{
   display: none;
-}
-.text-pahlawan1 h1{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-.text-pahlawan1 p{
-  font-size: 20px;
-  font-family: "Poppins";
-  text-align: center;
-  color: rgb(177, 177, 177);
-  padding: 0px 40px 0px 40px;
-  margin-top: 20px;
-}
-.text-pahlawan1 h2{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-
-/* pahlawan2222222222222222222222222222 */
-
-.bio-pahlawan2{
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.img-pahlawan2{
+
+
+
+.cardlist .carditem .cardimage{
+  width: 400px;
+  /* aspect-ratio: 16/9; */
+  /* object-fit: cover; */
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+
+.cardlink:hover{
+  .cardimage{
+    transform: translateY(-100px);
+  }
+  .cardlink-text{
+    /* transform: translateY(-80px); */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cardbutton{
+  border: solid 2px black;
+  border-radius: 500px;
+  background: white;
+  height: 650px;
   display: flex;
-  margin-top: 80px;
-  align-items: center;
   justify-content: center;
-}
-.img-pahlawan2 img{
   align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.text-pahlawan2{
-  display: none;
-}
-.text-pahlawan2 h1{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-.text-pahlawan2 p{
-  font-size: 20px;
-  font-family: "Poppins";
-  text-align: center;
-  color: rgb(177, 177, 177);
-  padding: 0px 40px 0px 40px;
-  margin-top: 20px;
-}
-.text-pahlawan2 h2{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
+  transition: all 0.5s ease;
+
 }
 
-/* pahlawan33333333333333333333333333333 */
-
-.bio-pahlawan3{
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan3{
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan3 img{
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.text-pahlawan3{
-  display: none;
-}
-.text-pahlawan3 h1{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-.text-pahlawan3 p{
-  font-size: 20px;
-  font-family: "Poppins";
-  text-align: center;
-  color: rgb(177, 177, 177);
-  padding: 0px 40px 0px 40px;
-  margin-top: 20px;
-}
-.text-pahlawan3 h2{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
+.cardlist .carditem .cardlinkk{
+  user-select: none;
+  display: block;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.5s ease;
 }
 
-/* pahlawan4444444444444444444444444444 */
-
-.bio-pahlawan4{
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan4{
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan4 img{
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.text-pahlawan4{
-  display: none;
-}
-.text-pahlawan4 h1{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-.text-pahlawan4 p{
-  font-size: 20px;
-  font-family: "Poppins";
-  text-align: center;
-  color: rgb(177, 177, 177);
-  padding: 0px 40px 0px 40px;
-  margin-top: 20px;
-}
-.text-pahlawan4 h2{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-
-/* pahlawan55555555555555555555555 */
-
-.bio-pahlawan5{
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan5{
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-}
-.img-pahlawan5 img{
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.text-pahlawan5{
-  display: none;
-}
-.text-pahlawan5 h1{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
-}
-.text-pahlawan5 p{
-  font-size: 20px;
-  font-family: "Poppins";
-  text-align: center;
-  color: rgb(177, 177, 177);
-  padding: 0px 40px 0px 40px;
-  margin-top: 20px;
-}
-.text-pahlawan5 h2{
-  font-size: 75px;
-  text-align: center;
-  font-weight: 300;
-  margin-top: 60px;
+.cardbutton:hover{
+  background-color: gray;
 }
