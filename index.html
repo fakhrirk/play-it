@@ -4,31 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HeroInd</title>
+
     <link rel="stylesheet" href="main-style.css" />
     <link rel="website icon" href="assets/logoHeader.png" type="png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav id="navbar">
       <div class="nav-logo">
         <img src="assets/logoNav.png" />
       </div>
       <div class="nav-item">
         <ul>
           <li><a href="#" class="active">Home</a></li>
-          <li><a href="#" class="noActive">Tentang</a></li>
-          <li><a href="#" class="noActive">Pahlawan</a></li>
+          <li><a href="#Tentang" class="noActive">Tentang</a></li>
+          <li><a href="#ft-pahlawan" class="noActive">Pahlawan</a></li>
         </ul>
       </div>
       <div class="nav-button">
@@ -39,7 +36,7 @@
     </nav>
 
     <!-- Hero -->
-    <section>
+    <section id="hero">
       <div class="container-hero">
         <div class="text-hero">
           <div class="header-text-hero">
@@ -51,24 +48,30 @@
           <div class="btn-text-hero">
             <a href="#">
               <button class="btn-hero-pahlawan">Pahlawan</button>
-            </a>
+              </a>
           </div>
         </div>
         <div class="image-hero">
           <img src="assets/hero-img.png" />
         </div>
       </div>
+      <div class="btn-hero-down">
+        <button class="btn-down-hero" id="scrollBtn">
+          <a href="#Tentang"><img src="assets/caret-down.png" /></a>
+          </a>
+        </button>
+      </div>
     </section>
 
     <!-- Tentang -->
-    <section>
+    <section id="Tentang">
       <div class="container-tentang">
         <div class="tentang1">
           <img src="assets/img-tntng1.png" alt="gambar1-tentang-section">
         </div>
         <div class="tentang2">
           <h1>
-            Tentang
+            Tentang <span class="heroind-h-tentang"><span style="color: #596e79;">Hero</span>Idn</span>
           </h1>
           <p>
             Halo teman 👋 Selamat Datang di HeroInd! disini kita mengungkap kisah-kisah heroik para pahlawan Indonesia! Website ini membawa Anda mengenal lebih dalam perjuangan, pengorbanan, dan semangat mereka yang telah membentuk negeri ini. Tunggu apa lagi? Ayo kita terjun ke dunia mereka! 
@@ -81,10 +84,33 @@
     </section>
 
     <!-- Foto-foto pahlawan -->
-    <section></section>
+    <section id="ft-pahlawan">
+      <p><span class="h-Pahlawan">Pahlawan</span> Kita</p>
+      <div class="foto">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+      </div>
+      <div class="foto">
+        <div class="item-2 item1-2"></div>
+        <div class="item-2 item2-2"></div>
+        <div class="item-2 item3-2"></div>
+        <div class="item-2 item4-2"></div>
+        <div class="item-2 item5-2"></div>
+      </div>
+      <div class="foto">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+      </div>
+    </section>
 
     <!-- Penjelasan pahlawan biografi (singkat) -->
-    <section>
+    <!-- <section>
       <div class="container-biografi">
         <div class="biografi1">
           <h1>
@@ -156,6 +182,34 @@
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+      </div>
+    </section> -->
+
+    <section class="shape">
+      <div class="wave"></div>
+    </section>
+
+    <section id="Game-card">
+      <div class="container-game">
+        <div class="left-img">
+          <img src="assets/img-left.png">
+        </div>
+        <div class="text-game">
+          <div class="head-game">
+            <p>MINI GAME</p>
+          </div>
+          <div class="deskiprisi-game">
+            <p>Halo teman 👋 Selamat Datang di HeroInd Mini games, disini kita memberikan kalian sebuah quiz tentang para Pahlawan-pahlawan indonesia, yuk klik tombol MULAI untuk memulai quiznya!! Selamat mencoba.</p>
+          </div>
+          <div class="button-play-game">
+            <a href="#">
+              <p><i class="fa-regular fa-circle-play"></i> <span class="mainkan-btn">Mainkan</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="right-img">
+          <img src="assets/img-left.png">
+        </div>
       </div>
     </section>
 

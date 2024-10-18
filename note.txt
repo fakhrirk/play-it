@@ -1,2 +1,76 @@
 main color = #596E79
 background button = #DFD3C3
+
+
+
+
+.card-wrapper {
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.cardlist .carditem {
+  width: 400px;
+  list-style: none;
+}
+
+.cardlist .carditem .cardlink {
+  width: 400px;
+  user-select: none;
+  display: block;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.cardlink-text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cardlist .carditem .cardimage {
+  width: 400px;
+  /* aspect-ratio: 16/9; */
+  /* object-fit: cover; */
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.cardlink:hover {
+  .cardimage {
+    transform: translateY(-100px);
+  }
+  .cardlink-text {
+    /* transform: translateY(-80px); */
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cardbutton {
+  border: solid 2px black;
+  border-radius: 500px;
+  background: white;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.cardlist .carditem .cardlinkk {
+  user-select: none;
+  display: block;
+  /* background-color: rgb(255, 255, 255); */
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.cardbutton:hover {
+  background-color: gray;
+}

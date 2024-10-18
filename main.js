@@ -1,27 +1,35 @@
-const swiper = new Swiper('.card-wrapper', {
-    loop: false,
-    spaceBetween: 100,
-  
-    // pagination bullets
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+// Hide button scroll
+
+const scrollButton = document.getElementById("scrollBtn");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    scrollButton.classList.add("hidden");
+  } else {
+    scrollButton.classList.remove("hidden");
+  }
+});
+
+// swiper script
+const swiper = new swiper(".card-wrapper", {
+  loop: false,
+  spaceBetween: 100,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-  
-    breakpoints: {
-      0: {
-        slidesPerView:1
-      },
-      768: {
-        slidesPerView:2
-      },
-      1024: {
-        slidesPerView:3
-      }
-    }
-  });
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

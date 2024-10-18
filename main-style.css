@@ -9,11 +9,12 @@
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   z-index: 100;
   width: auto;
-  padding: 20px 0 7px 0;
+  font-size: 20px;
+  padding: 20px 40px 7px 40px;
 }
 
 .nav-logo {
@@ -22,16 +23,19 @@ nav {
 }
 
 .nav-logo img {
-  width: 140px;
+  width: 170px;
 }
 
 .nav-item {
-  margin: 0 15% 0 25%;
   width: 25%;
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
 }
 
 .nav-item ul {
   display: flex;
+  text-align: center;
 }
 
 .nav-item li {
@@ -41,6 +45,7 @@ nav {
 
 .nav-item a {
   display: inline-block;
+  width: 80px;
   transition: 0.7s;
 }
 
@@ -71,7 +76,7 @@ nav {
   padding: 10px 40px;
   font-weight: 600;
   font-family: "poppins";
-  font-size: 13px;
+  font-size: 16px;
   cursor: pointer;
   border: 2px solid #dfd3c3;
   color: #dfd3c3;
@@ -88,9 +93,9 @@ nav {
 /* HeroVVVVVVVVVVVVVVVV */
 
 .container-hero {
-  width: 100vw;
+  width: 100%;
   height: 87vh;
-  margin-top: -20px;
+  margin-top: -30px;
   display: flex;
   justify-content: center;
 }
@@ -115,21 +120,45 @@ nav {
   justify-content: right;
 }
 
+.header-text-hero {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 .header-text-hero h1 {
-  width: 80%;
-  font-size: 60px;
-  font-weight: 500;
+  width: 60%;
+  font-size: 80px;
+  color: #dfd3c3;
+  margin-top: 20px;
+  font-weight: 400;
 }
 
 .kebebasan {
-  color: #596e79;
+  transition: 1s all;
+  color: #dfd3c3;
+}
+
+.header-text-hero h1:hover {
+  .kebebasan {
+    color: #596e79;
+    font-size: 85px;
+  }
+}
+
+.deskripsi-text-hero {
+  height: 13%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .deskripsi-text-hero p {
   width: 90%;
   font-family: "poppins";
+  font-size: 18px;
   color: #596e79;
-  margin: 30px 0 30px 0;
 }
 
 .btn-hero-pahlawan {
@@ -137,7 +166,7 @@ nav {
   padding: 10px 40px;
   font-weight: 600;
   font-family: "poppins";
-  font-size: 13px;
+  font-size: 16px;
   cursor: pointer;
   border: 2px solid #dfd3c3;
   text-align: center;
@@ -151,27 +180,54 @@ nav {
   color: black;
 }
 
-.container-tentang{
-  /* border: 1px solid rgb(255, 0, 0); */
-  width: 100%;
-  height: 80vh;
+.btn-text-hero {
   display: flex;
-  margin-bottom: 6%;
+}
+
+.btn-hero-down {
+  width: auto;
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+  display: block;
+  animation: bounce 2s alternate infinite ease-in-out;
+}
+
+.btn-down-hero {
+  border: 0;
+  background: none;
+}
+
+.btn-down-hero img {
+  width: 50px;
+}
+
+.btn-down-hero.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* TentangVVVVVVVVVVVV */
+.container-tentang {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-bottom: 3%;
   justify-content: space-around;
   align-items: center;
-  padding: 70px;
+  margin-top: 40px;
+  padding: 30px 70px 70px 70px;
 }
-.tentang1{
-  /* border: 1px solid black; */
+
+.tentang1 {
   width: 25%;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 90px;
 }
-.tentang2{
-  /* border: 1px solid black; */
+
+.tentang2 {
   width: 50%;
   height: 70vh;
   display: flex;
@@ -180,22 +236,28 @@ nav {
   align-items: center;
   padding: 0 90px;
 }
-.tentang2 h1{
-  font-size: 90px;
+
+.heroind-h-tentang {
+  background-color: #dfd3c3;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 20px 8px 10px;
+}
+.tentang2 h1 {
+  font-size: 60px;
   text-align: center;
   font-weight: 300;
-  margin-top: 60px;
+  margin-top: 120px;
 }
-.tentang2 p{
+.tentang2 p {
   font-size: 20px;
   font-family: "Poppins";
   text-align: center;
   color: rgb(177, 177, 177);
   padding: 0px 40px 0px 40px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
-.tentang3{
-  /* border: 1px solid black; */
+.tentang3 {
   width: 25%;
   height: 70vh;
   display: flex;
@@ -204,9 +266,7 @@ nav {
   padding: 0 90px;
 }
 
-
-.container-biografi{
-  /* border: 1px solid rgb(255, 0, 0); */
+.container-biografi {
   width: 100%;
   height: auto;
   display: flex;
@@ -214,25 +274,22 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* padding: 70px; */
 }
-.biografi1{
-  /* border: 1px solid black; */
+.biografi1 {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: baseline;
   flex-direction: column;
   align-items: center;
-  /* padding: 0 90px; */
 }
-.biografi1 h1{
+.biografi1 h1 {
   font-size: 90px;
   text-align: center;
   font-weight: 300;
   margin-top: 60px;
 }
-.biografi1 p{
+.biografi1 p {
   font-size: 20px;
   font-family: "Poppins";
   text-align: center;
@@ -241,59 +298,174 @@ nav {
   margin-top: 20px;
 }
 
+/* Foto pahlawanVVVVVVVVVVVVVVVVVVVV */
+
+#ft-pahlawan {
+  width: 100%;
+  height: 100vh;
+  scroll-margin-top: 20px;
+}
+
+#ft-pahlawan p {
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.h-Pahlawan {
+  color: #596e79;
+  background-color: #dfd3c3;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 20px 8px 10px;
+}
+
+.foto {
+  height: 200px;
+  width: 90%;
+  max-width: 1530px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 4% 96%, transparent);
+}
+
+.foto:nth-child(2) {
+  margin-top: 10px;
+}
+.foto:nth-child(4) {
+  margin-top: 10px;
+}
+.foto:nth-child(3) {
+  margin-top: 10px;
+}
+
+.item {
+  width: 300px;
+  height: 200px;
+  border-radius: 9px;
+  position: absolute;
+  left: 100%;
+  animation: toLeft 20s linear infinite;
+}
+
+.item-2 {
+  width: 300px;
+  height: 200px;
+  border-radius: 9px;
+  position: absolute;
+  right: 100%;
+  animation: toRight 20s linear infinite;
+}
+
+.foto:hover {
+  .item-2 {
+    animation-play-state: paused;
+  }
+  .item {
+    animation-play-state: paused;
+  }
+}
+
+.item1 {
+  animation-delay: calc(20s / 5 * (5 - 1) * -1);
+  background-image: url("assets/pahlawan-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item2 {
+  animation-delay: calc(20s / 5 * (5 - 2) * -1);
+  background-image: url("assets/pahlawan-2.png");
+  background-size: cover;
+}
+.item3 {
+  animation-delay: calc(20s / 5 * (5 - 3) * -1);
+  background-image: url("assets/pahlawan-3.png");
+  background-size: cover;
+}
+.item4 {
+  animation-delay: calc(20s / 5 * (5 - 4) * -1);
+  background-image: url("assets/pahlawan-4.png");
+  background-size: cover;
+}
+.item5 {
+  animation-delay: calc(20s / 5 * (5 - 5) * -1);
+  background-image: url("assets/pahlawan-5.png");
+  background-size: cover;
+}
+
+.item1-2 {
+  animation-delay: calc(20s / 5 * (5 - 1) * -1);
+  background-image: url("assets/pahlawan-6.png");
+  background-size: cover;
+}
+.item2-2 {
+  animation-delay: calc(20s / 5 * (5 - 2) * -1);
+  background-image: url("assets/pahlawan-7.png");
+  background-size: cover;
+}
+.item3-2 {
+  animation-delay: calc(20s / 5 * (5 - 3) * -1);
+  background-image: url("assets/pahlawan-8.png");
+  background-size: cover;
+}
+.item4-2 {
+  animation-delay: calc(20s / 5 * (5 - 4) * -1);
+  background-image: url("assets/pahlawan-9.png");
+  background-size: cover;
+}
+.item5-2 {
+  animation-delay: calc(20s / 5 * (5 - 5) * -1);
+  background-image: url("assets/pahlawan-10.png");
+  background-size: cover;
+}
+
 /* SLIDERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
 
-.card-wrapper{
+.card-wrapper {
   padding-bottom: 100px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.cardlist .carditem{
+.cardlist .carditem {
   width: 400px;
   list-style: none;
 }
 
-.cardlist .carditem .cardlink{
+.cardlist .carditem .cardlink {
   width: 400px;
   user-select: none;
   display: block;
-  /* background-color: rgb(255, 255, 255); */
   padding: 18px;
   border-radius: 12px;
   text-decoration: none;
   transition: all 0.5s ease;
 }
-.cardlink-text{
+.cardlink-text {
   display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-
-
-.cardlist .carditem .cardimage{
+.cardlist .carditem .cardimage {
   width: 400px;
-  /* aspect-ratio: 16/9; */
-  /* object-fit: cover; */
   border-radius: 12px;
   transition: all 0.5s ease;
 }
 
-
-.cardlink:hover{
-  .cardimage{
+.cardlink:hover {
+  .cardimage {
     transform: translateY(-100px);
   }
-  .cardlink-text{
-    /* transform: translateY(-80px); */
+  .cardlink-text {
     display: flex;
     flex-direction: column;
   }
 }
 
-.cardbutton{
+.cardbutton {
   border: solid 2px black;
   border-radius: 500px;
   background: white;
@@ -302,19 +474,212 @@ nav {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
-
 }
 
-.cardlist .carditem .cardlinkk{
+.cardlist .carditem .cardlinkk {
   user-select: none;
   display: block;
-  /* background-color: rgb(255, 255, 255); */
   padding: 18px;
   border-radius: 12px;
   text-decoration: none;
   transition: all 0.5s ease;
 }
 
-.cardbutton:hover{
+.cardbutton:hover {
   background-color: gray;
+}
+
+/* Shape */
+.wave {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background: url("assets/shape.png");
+  background-size: 2000px 100px;
+  margin-bottom: -5px;
+  background-repeat: no-repeat;
+  animation: shapeAnimation 8s ease-in-out alternate infinite;
+}
+
+#Game-card {
+  width: 100%;
+  height: 55vh;
+  overflow: hidden;
+  background-color: #dfd3c3;
+}
+
+.container-game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-img {
+  width: 28%;
+  height: 100%;
+  margin-top: 55px;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.left-img img {
+  width: 100%;
+}
+
+.right-img {
+  width: 28%;
+  height: 100%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+}
+
+.right-img img {
+  width: 100%;
+  transform: perspective(2500px) rotateY(-180deg);
+}
+
+.text-game {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-game P {
+  font-size: 70px;
+  font-family: "bungee";
+  color: #fff;
+  /* margin-bottom: 10px; */
+}
+
+.deskiprisi-game p {
+  font-size: 18px;
+  font-family: "poppins";
+  color: #596e79;
+  margin: 10px 0 30px 0;
+  font-weight: 300;
+}
+
+.button-play-game {
+  width: 200px;
+  border: 3px solid #fff;
+  padding: 20px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-play-game:hover {
+  .mainkan-btn {
+    display: none;
+  }
+  .fa-regular {
+    font-size: 35px;
+  }
+}
+
+.button-play-game a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-play-game i {
+  font-size: 25px;
+}
+
+.button-play-game p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.mainkan-btn {
+  font-family: "poppins";
+}
+
+/* Keyframes Setting */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toLeft {
+  to {
+    left: -300px;
+  }
+}
+
+@keyframes toRight {
+  to {
+    right: -300px;
+  }
+}
+
+@keyframes shapeAnimation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100%;
+  }
 }
